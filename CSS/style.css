@@ -73,3 +73,27 @@ header {
     font-weight: 300;
     border: none;
 }
+
+.header-menu-tabs {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex: none;
+}
+
+.header-menu-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 62px;
+    border-bottom: 4px solid var(--fb-white);
+    color: var(--light-color-text);
+    cursor: pointer;
+    font-size: 1.3rem
+}
+
+
+ .header-menu-tabs :hover {
+    border-bottom: 4px solid var(--fb-blue);
+}
