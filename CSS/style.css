@@ -93,7 +93,16 @@ header {
     font-size: 1.3rem
 }
 
-
- .header-menu-tabs :hover {
+.header-menu-tab--active, 
+.header-menu-tab:hover {
     border-bottom: 4px solid var(--fb-blue);
+}
+.header-menu-tab:hover .fas, 
+.header-menu-tab:hover .fab{
+    color: var(--fb-blue);
+}
+
+.header-menu-tab--active .fas, 
+.header-menu-tab--active .fab{
+    color: var(--fb-blue);
 }
