@@ -204,3 +204,26 @@ where where you specify pos:rel; */
 .header-circle-link .fab {
     position: relative;
 }
+
+.content-area--feed {
+    padding: 90px 15px 20px;
+    display: flex;
+}
+
+.sidenav__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidenav-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.sidenav__item-title {
+    font-size: 1rem;
+    font-weight: 400;
+}
