@@ -124,9 +124,45 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    position:absolute;
+    position: absolute;
     top: -12px;
     right: -10px;
     font-weight: 700px;
 }
 
+.header-user-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-user-name {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.header-account {
+    display: flex;
+
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-circle-link {
+    background: var(--button-link);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--dark-color-text);
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
