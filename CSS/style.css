@@ -166,3 +166,41 @@ header {
     text-decoration: none;
     margin-right: 10px;
 }
+
+.header-circle-link .fa-sort-down {
+    position: relative;
+    top: -3px;
+    font-size: 1.4rem;
+}
+
+.header-link-icon {
+    font-size: .9rem;
+}
+
+
+.header-notification-bubble-v2 {
+    color: var(--fb-white);
+    background: var(--fb-red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    padding: 4px;
+    position: absolute;
+    top: -18px;
+    right: -17px;
+}
+/* position: relative; and position: absolute;
+allow you to style the notification bubble relative to
+where where you specify pos:rel; */
+
+.header-circle-link .fas,
+.header-circle-link .fab {
+    position: relative;
+}
