@@ -227,3 +227,32 @@ where where you specify pos:rel; */
     font-size: 1rem;
     font-weight: 400;
 }
+
+.sidenav__item-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 20px; 
+}
+
+.sidenav__item-notification {
+    color: var(--fb-blue);
+    margin-top: 5px;
+    font-size: .75rem;
+    display: block;
+    font-weight: 300;
+}
+
+.sidenav__item-notification-circle {
+    background: var(--fb-blue);
+    display: inline-block;
+    /* reason inline-block is used is because we want the circle to be on the same line 
+    as the notification text */
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin-right: 5px; 
+}
