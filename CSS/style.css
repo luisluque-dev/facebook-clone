@@ -256,3 +256,30 @@ where where you specify pos:rel; */
     border-radius: 50%;
     margin-right: 5px; 
 }
+
+.sidenav__item-icon--circle {
+    background: var(--button-link);
+    border-radius: 50%;
+    font-size: .9rem;
+}
+
+.sidenav__item-icon--circle-white {
+    background: var(--fb-blue);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.sidenav__item-icon .fas,
+.sidnav__item-icon .fab {
+    color: var(--fb-blue);
+}
+
+.sidenav__item-icon--circle .fas,
+.sidnav__item-icon--circle .fab {
+    color: var(--fb-black);
+}
+
+.sidenav__item-icon--circle-white .fas,
+.sidnav__item-icon--circle-white .fab {
+    color: var(--fb-whitebg);
+} 
