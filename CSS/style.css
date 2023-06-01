@@ -430,3 +430,43 @@ where where you specify pos:rel; */
     font-weight: 300;
     width: 100%;
 }
+
+.hline {
+    height: 1px;
+    background: var(--button-link);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.post-types {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.post-types__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.post-types__item .fas,
+.post-types__item .fab {
+    margin: 10px;
+    font-size: 1.5rem;
+
+}
+
+.post-types__item .fa-video {
+    color: var(--fb-red);
+}
+
+.post-types__item .fa-photo-video {
+    color: var(--fb-green);
+}
+
+.post-types__item .fa-laugh-beam {
+    color: var(--fb-yellow);
+}
+
