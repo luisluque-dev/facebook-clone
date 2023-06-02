@@ -470,3 +470,60 @@ where where you specify pos:rel; */
     color: var(--fb-yellow);
 }
 
+.photopost{
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+}
+
+.photopost__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px;
+}
+
+.photopost__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photopost__left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 0;
+    object-fit: cover;
+}
+
+.photopost__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photopost__date {
+    font-size: .8rem;
+    color: var(--light-color-text);
+}
+
+.photopost__name {
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.photopost__info .fa-ellipsis-h {
+    color: var(--light-color-text);
+}
+
+.photopost__description {
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+}
+
+.photopost__img img {
+    width: 100%;
+}
