@@ -24,6 +24,26 @@
     --shadow-color: rgba(0, 0, 0, 0.25);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fb-blue: #0a86f0;
+        --fb-red: #ee2340;
+        --fb-green: #3db557;
+        --fb-yellow: #f6b024;
+
+        
+        --icon-circle-bg: rgb(108, 164, 219);
+        --fb-bgcolor: rgb(28, 27, 27);
+        --fb-white: #ffffff;
+        --fb-whitebg: rgb(5, 29, 79);
+        --fb-black: rgb(172, 171, 171);
+        --dark-color-text: #090909;
+        --light-color-text: #e3dfdf;
+        --button-link: #bebfc4;
+        --stories-bg: #090909;
+    }
+}
+
 body {
     background: var(--fb-bgcolor);
     font-family: Helvetica, Arial, sans-serif;
@@ -267,7 +287,7 @@ where where you specify pos:rel; */
 }
 
 .sidenav__item-icon--circle {
-    background: var(--button-link);
+    background: var(--fb-bgcolor);
     border-radius: 50%;
     font-size: .9rem;
 }
