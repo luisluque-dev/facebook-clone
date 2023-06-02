@@ -210,6 +210,9 @@ where where you specify pos:rel; */
 .content-area--feed {
     padding: 90px 15px 20px;
     display: flex;
+
+    /*take this out later */
+    height: 2500px;
 }
 
 .sidenav {
@@ -527,3 +530,96 @@ where where you specify pos:rel; */
 .photopost__img img {
     width: 100%;
 }
+
+.photopost__stats {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: var(--light-color-text);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.photopost__stats-emojis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.emoji-circle {
+    display: flex;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: .4rem;
+    border: 2px solid white;
+    position: relative;    
+}
+
+.emoji-circle:nth-child(1) {
+    z-index: 3;
+}
+
+.emoji-circle:nth-child(2) {
+    z-index: 2;
+    left: -5px;
+}
+
+.emoji-circle:nth-child(3) {
+    z-index: 1;
+    left: -10px;
+}
+
+.emoji-circle--blue {
+    background: linear-gradient(0deg, rgba(4, 60, 108, 1) 0%, 
+    rgba(10, 134, 240, 1)100%);
+}
+
+.emoji-circle--red {
+    background: linear-gradient(0deg, rgba(92,  15, 26, 1) 0%, 
+    rgba(285, 35, 64, 1)100%);
+}
+
+.emoji-circle--yellow {
+    background: black;
+    overflow: hidden;
+}
+
+ .emoji-circle--blue .fa-thumbs-up {
+    position: relative;
+    top: -1px; 
+ } 
+
+ .emoji-circle--yellow .fa-surprise { 
+    color: rgba(246, 176, 36, 1);
+    font-size: 1.3rem;
+    position: relative;
+    top: -1px;
+ }
+ 
+ .photopost__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ .photopost__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color-text);
+    text-decoration: none;
+    width: 100%;
+ }
+
+ .photopost__link .fas {
+    margin-right: 10px;
+ }
