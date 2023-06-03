@@ -20,8 +20,10 @@
     --button-link: #e0e2e8;
     --stories-bg: #090909;
     --icon-circle-bg: linear-gradient(0deg, rgba(65, 67, 69, 1) 0%,
-    rgba(107, 110, 114, 1) 100%)
+    rgba(107, 110, 114, 1) 100%);
+    --gradient: linear-gradient(90deg, rgba(12,50,179,1) 0%, rgba(150,22,207,1) 100%);
     --shadow-color: rgba(0, 0, 0, 0.25);
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -498,6 +500,75 @@ where where you specify pos:rel; */
 .post-types__item .fa-laugh-beam {
     color: var(--fb-yellow);
 }
+
+.room-box{
+    display: inline-flex;
+    margin-right: 0;
+    justify-content: start;
+    align-items: center;
+    max-height:fit-content;
+}
+
+.room-box__button {
+    border: 1px solid var(--fb-blue);
+    border-radius: 30px;
+    max-width: fit-content;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 20px;  
+}
+
+.room-box__button .fa-video{
+    font-size: 1.1rem;
+    margin-right: 7px;
+    color: var(--fb-blue);
+}
+
+.room-box__friends{
+    display: flex;
+    justify-content: space-between;
+    flex:auto;
+    gap: 15px;
+
+}
+
+.room-box__friend{
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    color:#0a86f0;
+    border-radius: 50%;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.room-box__friend:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.room__friend{
+    position: relative;
+}
+
+.active-friend{
+    background: var(--fb-green);
+    z-index: 50;
+    height: 12px;
+    width: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    right: -2px;
+}
+
 
 .photopost{
     padding: 0 0 20px;
