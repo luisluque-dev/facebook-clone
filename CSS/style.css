@@ -95,6 +95,14 @@ header {
     padding-left: 35px;
     font-weight: 300;
     border: none;
+    margin-right: 20px;
+}
+
+.header__mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7;
 }
 
 .header-menu-tabs {
@@ -692,4 +700,41 @@ where where you specify pos:rel; */
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+ }
+
+ @media only screen and (max-width: 1300px) {
+    .header-menu-tabs{
+        display: none;
+    }
+    /* .header__logo-search input[type="text"] {
+        width: 15px; 
+    } */
+
+
+ } 
+
+ @media only screen and (max-width: 1000px) {
+
+ }
+
+ @media only screen and (max-width: 768px) {
+    .header-user-name {
+        display: none;
+    }   
+    .header-user-img {
+        display: none;
+    }
+    .header-logo-search input[type="text"] {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+    .header-logo-search .fa-search {
+        left: 13px;
+        top: 13px;
+    }
+ }
+
+ @media only screen and (max-width: 320px) {
+
  }
