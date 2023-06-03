@@ -99,7 +99,7 @@ header {
 }
 
 .header__mobile-button {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 1.7;
@@ -714,7 +714,12 @@ where where you specify pos:rel; */
  } 
 
  @media only screen and (max-width: 1000px) {
-
+    .feed {
+        width: 100%;
+    }
+    .sidenav {
+        display: none;
+    }
  }
 
  @media only screen and (max-width: 768px) {
@@ -733,8 +738,29 @@ where where you specify pos:rel; */
         left: 13px;
         top: 13px;
     }
+    .header__mobile-button {
+        display: flex;
+    }
+    .feed {
+        display: block;
+    }
+    .stories {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .stories__video-container{
+        flex: 1 0 auto;
+    }
+    .content-area--feed {
+        width: 100%;
+    }
  }
 
- @media only screen and (max-width: 320px) {
-
+ @media only screen and (max-width: 412px) {
+    .header-account {
+        display: none;
+    }
+    .post-types__title {
+        display: none;
+    }
  }
