@@ -62,7 +62,7 @@ header {
     width: 100%;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     position: fixed;
-    z-index: 20;
+    z-index: 100;
     top: 0;
     left: 0;
 }
@@ -535,6 +535,7 @@ where where you specify pos:rel; */
     justify-content: space-between;
     flex:auto;
     gap: 15px;
+    overflow: scroll;
 
 }
 
@@ -725,6 +726,7 @@ where where you specify pos:rel; */
     position: fixed;
     bottom: 0;
     right: 20px;
+    z-index: 55;
  }
 
  .floatingmsg__bubble {
